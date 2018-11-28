@@ -1,0 +1,15 @@
+---
+title: "lab#9"
+author: "Tyler Cobian"
+date: "11/28/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("stargazer")
+library(stargazer)
+library(tidyverse)
+
+```
+

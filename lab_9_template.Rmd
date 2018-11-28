@@ -1,12 +1,14 @@
 ---
 title: "Lab 9 - Multiple Linear Regression"
-author: "ENTER YOUR NAME HERE"
+author: "Tyler Cobian"
 output:
   html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(stargazer)
+library(tidyverse)
 ```
 
 Use this template to follow along in Lab Week 9. Each code chunk you'll need is already created and named. 
@@ -28,7 +30,8 @@ Use this template to follow along in Lab Week 9. Each code chunk you'll need is 
 - stargazer
 
 ```{r packages, include = FALSE}
-
+library(tidyverse)
+library(stargazer)
 # a. Load packages 'tidyverse' and 'stargazer':
 
 
@@ -38,7 +41,7 @@ Use this template to follow along in Lab Week 9. Each code chunk you'll need is 
 ###2. Load data (slo_homes.csv) as a df called 'homes', then filter to create a data frame called 'homes_sub' that only include homes in SLO, Arroyo Grande, Santa Maria-Orcutt, and Atascadero
 
 ```{r get_data, include = FALSE}
-
+homes<- read_csv("slo_homes.csv")
 # a. Read in data as 'homes':
 
 
